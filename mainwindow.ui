@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>945</width>
+    <height>643</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Photo Cheater</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>864</width>
+         <height>568</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="display">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Image</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>945</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="action_open"/>
+    <addaction name="action_save"/>
+    <addaction name="separator"/>
+    <addaction name="action_exit"/>
+   </widget>
+   <addaction name="menu_F"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_reset"/>
+   <addaction name="separator"/>
+   <addaction name="action_white"/>
+   <addaction name="action_red"/>
+   <addaction name="action_green"/>
+   <addaction name="action_blue"/>
+   <addaction name="action_yellow"/>
+   <addaction name="action_purple"/>
+   <addaction name="action_cyan"/>
+  </widget>
+  <action name="action_open">
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action_gray">
+   <property name="text">
+    <string>灰度化</string>
+   </property>
+  </action>
+  <action name="action_binary">
+   <property name="text">
+    <string>二值化</string>
+   </property>
+  </action>
+  <action name="action_reset">
+   <property name="text">
+    <string>恢复</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="action_average">
+   <property name="text">
+    <string>均值模糊</string>
+   </property>
+  </action>
+  <action name="action_median">
+   <property name="text">
+    <string>中值模糊</string>
+   </property>
+  </action>
+  <action name="action_gaussian">
+   <property name="text">
+    <string>高斯模糊</string>
+   </property>
+  </action>
+  <action name="action_red">
+   <property name="text">
+    <string>红底</string>
+   </property>
+  </action>
+  <action name="action_blue">
+   <property name="text">
+    <string>蓝底</string>
+   </property>
+  </action>
+  <action name="action_white">
+   <property name="text">
+    <string>白底</string>
+   </property>
+  </action>
+  <action name="action_green">
+   <property name="text">
+    <string>绿底</string>
+   </property>
+  </action>
+  <action name="action_yellow">
+   <property name="text">
+    <string>黄底</string>
+   </property>
+  </action>
+  <action name="action_purple">
+   <property name="text">
+    <string>紫底</string>
+   </property>
+  </action>
+  <action name="action_cyan">
+   <property name="text">
+    <string>青底</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
